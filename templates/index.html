@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webfa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+    <nav>
+       <div class="wrapper">
+        <div class="logo"><a href=''>Homefa</a></div>
+        <div class="menu">
+            <ul>
+                <li><a href="#Beranda">Beranda</a></li>
+                <li><a href="#About Me">About Me</a></li>
+                <li><a href="#Galeri">Galeri</a></li>  
+            </ul>
+        </div>   
+       </div>
+    </nav>
+    <div class="wrapper">
+        <!----Beranda---->
+        <section id="Beranda">
+            <div class="gambar1">
+                <img src="{{ url_for('static', filename='galeri/rifa biodata.jpg') }}">
+
+            </div>
+            <div class="kolom">
+                <h1 class="deskripsi">Selamat Datang di Website Rifaaa!</h1>
+                <h2>Biodata Rifa</h2>
+                <p>Nama       : Rifa Yulia Putri</p>
+                <p>TTL        : Majalengka, 15 Maret 2006</p>
+                <p>Pendidikan : Mahasiswi S-1</p>
+                <p>NPM        : 140910240028</p>
+                <p>Jurusan    : Teknik Elektro</p>
+                <p>Hobi       : Berenang, memasak, menonton film</p>
+                <p>No.Telepon : 085659822015</p>
+
+                <h1>Cek lagi informasi yang lainnyaa!!!</h1>
+            </div>
+        </section>
+
+        <!----About Me----->
+        <section id="About Me">
+            <div class="kolom">
+                <p class="deskripsi">Mengenal Lebih Jauh!</p>
+                <h1>Latar Belakang Pendidikan</h1>
+                <p>Saya memulai pendidikan di SDN Wetan 7, kemudian melanjutkan ke SMP Negeri 3 Majalengka dan SMA Negeri 1, di mana saya mulai tertarik dengan ilmu pengetahuan dan teknologi. Setelah lulus dari SMA, saya melanjutkan studi di Universitas Padjajaran dengan mengambil jurusan Teknik Elektro, yang memberi saya pemahaman mendalam tentang elektronika dan sistem listrik. Pendidikan saya di Unpad mengasah keterampilan teknis dan mempersiapkan saya untuk berkarir di dunia teknologi.</p>
+
+                <div class="pendidikan-galeri">
+                    <h2>Foto-foto dari pendidikan saya</h2>
+                    <div class="pendidikan-images">
+                        <img src="{{ url_for('static', filename='galeri/sdn_wetan7.jpg') }}" alt="SDN Wetan 7">
+                        <img src="{{ url_for('static', filename='galeri/smp3_majalengka.jpg') }}" alt="SMP Negeri 3 Majalengka">
+                        <img src="{{ url_for('static', filename='galeri/sma1.jpg') }}" alt="SMA Negeri 1">
+                        <img src="{{ url_for('static', filename='galeri/unpad.jpg') }}" alt="Universitas Padjajaran">
+                    </div>
+                </div>
+
+                <h1>Minat dan Keahlian</h1>
+                <p>Minat saya di bidang musik meliputi bermain keyboard dan menyanyi. Di bidang olahraga, saya sangat tertarik pada diving dan bela diri. Saya memiliki keahlian komunikasi yang baik dan mudah bergaul dengan orang lain. Selain itu, saya juga ahli dalam berenang, yang merupakan salah satu kemampuan utama saya.</p>
+                <div class="gambar2">
+                    <div class="gambar-minat">
+                        <img src="{{ url_for('static', filename='galeri/Foto1.jpg') }}" alt="Foto 1">
+                        <img src="{{ url_for('static', filename='galeri/Foto2.jpg') }}" alt="Foto 2">
+                        <img src="{{ url_for('static', filename='galeri/Foto3.jpg') }}" alt="Foto 3">
+                        <img src="{{ url_for('static', filename='galeri/Foto4.jpg') }}" alt="Foto 4">
+                    </div>
+                </div>
+            </section>
+
+        <!----Galeri---->
+        <section id="Galeri">
+            <div class="tengah">
+                <div class="galeri-list">
+                    <h1>Galeri rifa</h1>
+                </div>
+                <div class="isigaleri">
+                <img src="{{ url_for('static', filename='galeri/before mancak.jpg') }}">
+                </div>
+
+                <div class="isigaleri">
+                    <img src="{{ url_for('static', filename='galeri/spectra.jpg') }}">
+                </div>
+
+                <div class="isigaleri">
+                    <img src="{{ url_for('static', filename='galeri/tampil mancak.jpg') }}">
+                </div>
+
+                <div class="isigaleri">
+                    <img src="{{ url_for('static', filename='galeri/cete.jpg') }}">
+                </div>
+
+                <div class="isigaleri">
+                    <img src="{{ url_for('static', filename='galeri/wearpack.jpg') }}">
+                </div>
+
+                <div class="isigaleri">
+                    <img src="{{ url_for('static', filename='galeri/relasii.jpg') }}">
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
